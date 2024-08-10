@@ -1,27 +1,18 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 body {
-    font-family: cursive, sans-serif;
+    font-family: cursive;
     background-color: #66bfbf;
-    color: #333;
 }
 
 header {
-    background-color: #55a8a8;
+    background-color: #66bfbf;
     color: #fff;
     padding: 20px;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
 #canvasContainer {
     position: relative;
-    width: 100%;
-    height: calc(100vh - 70px);
 }
 
 main {
@@ -29,82 +20,88 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    height: calc(100vh - 7  0px);
 }
 
 canvas {
     z-index: 1;
-    border: 2px solid #55a8a8;
+    border: 1px solid #ccc;
     background-color: #fff;
-    max-width: 95%;
-    max-height: 95%;
+    max-width: 100%;
+    max-height: 100%;
     width: auto;
     height: auto;
     cursor: crosshair;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#boardTool {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    position: absolute;
-    bottom: 20px;
-}
+/* .rectangle {
+    float: left;
+     style="width:500px;height:100px;border:1px solid #000;" 
+    width: 100px;
+    height:500px;
+    border: 1px;
+   color: #66bfbf; 
+} */
+/* .rectangle {
+    position: fixed;
+    top: 5rem;
+    left: 0;
+    width: 100px;
+    height: 500px;
+    border: 1px solid #000;
+    color: #66bfbf;
+} */
 
-.float-container, .float-container1 {
+#boardTool{
+    margin-left: 0px;
+    display:flex;
+    border-right: 0px;
+}
+.float-container {
     background-color: #FD841F;
+    margin-left: -130px;
+    position: absolute;
     border: 3px solid #fff;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
-
-.float-container {
-    left: 20px;
-}
-
-.float-container1 {
-    right: 20px;
-}
-
 #color {
-    border-radius: 50%;
+    border-radius: 100%;
     appearance: none;
     width: 65px;
     height: 65px;
-    margin: 15px 0 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
     background-color: transparent;
-    border: 2px solid #fff;
+    border: none;
     cursor: pointer;
 }
+.float-container1 {
+    background-color: #FD841F;
+    margin-left: 1220px;
+    position: absolute;
+    border: 3px solid #fff;
+    padding: 20px;
+}  
 
 label {
     margin-right: 10px;
-    color: #fff;
 }
 
 button {
-    border-radius: 50%;
-    font-family: cursive, sans-serif;
+    border-radius: 100%;
+    font-family: cursive;
     border: none;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    padding: 15px;
+    padding: 15px 15px;
     margin: 6px 2px;
     cursor: pointer;
-    background-color: #55a8a8;
-    color: #fff;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #478787;
 }
 
 .circle {
     margin-top: 20px;
+    margin-right: 0px;
     padding: 20px;
 }
