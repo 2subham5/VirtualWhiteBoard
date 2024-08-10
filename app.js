@@ -28,7 +28,7 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 mongoose.set('strictQuery', false);
-mongoose.connect("mongodb://0.0.0.0:27017/boardDB",{
+mongoose.connect("mongodb+srv://whiteBoard:Askmelater@cluster0.muhlp0p.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",{
   useNewUrlParser: true,
   useUnifiedTopology: true,
   // family: 4,
